@@ -257,7 +257,7 @@ class MainActivity : AppCompatActivity() {
                 Manifest.permission.READ_EXTERNAL_STORAGE)
         ){
             //call the rationale dialog to tell the user why they need to allow permission request
-            showRationaleDialog("Kids Drawing App","Kids Drawing App " +
+            showRationaleDialog(getString(R.string.app_name) + " App",getString(R.string.app_name) + " App " +
                     "needs to Access Your External Storage")
         }
         else {
@@ -345,7 +345,7 @@ class MainActivity : AppCompatActivity() {
 
                     val f = File(
                         externalCacheDir?.absoluteFile.toString()
-                                + File.separator + "KidDrawingApp_" + System.currentTimeMillis() / 1000 + ".jpg"
+                                + File.separator + getString(R.string.app_name_without_space) + "_" + System.currentTimeMillis() / 1000 + ".jpg"
                     )
                     // Here the Environment : Provides access to environment variables.
                     // getExternalStorageDirectory : returns the primary shared/external storage directory.
