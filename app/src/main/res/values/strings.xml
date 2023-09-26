@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Happy Draw</string>
+    <string name="app_name_without_space">HappyDraw</string>
     <string name="color_pick">color_pick</string>
     <string name="powered_by_kissgame">Powered By - \n KissGame</string>
 </resources>
